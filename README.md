@@ -8,10 +8,11 @@ Using pre-trained models has been found to reduce the effect of data heterogenei
 
 ```
 @inproceedings{goswami2025covariances,
-  title={Covariances for Free: Exploiting Mean Distributions for Training-free Federated Learning}, 
-  author={Goswami, Dipam and Magistri, Simone and Wang, Kai and Twardowski, Bart{\l}omiej and Bagdanov, Andrew D and van de Weijer, Joost},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2025}
+  title={Covariances for Free: Exploiting Mean Distributions for Training-free Federated Learning},
+  author={Dipam Goswami and Simone Magistri and Kai Wang and Bart{\l}omiej Twardowski and Andrew D. Bagdanov and Joost van de Weijer},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025},
+  url={https://openreview.net/forum?id=71e1UmCMQ9}
 }
 ```
 
