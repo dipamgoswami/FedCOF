@@ -47,5 +47,3 @@ Script for testing all the datasets are in the folder bash_for_testmethods.
 
 A Client class and a Server class for each training-free method could be found at federate_classes.py
 
-3. Code for fine-tuning and linear-probing after FedCOF initialization will be uploaded soon.
-
