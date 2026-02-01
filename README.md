@@ -20,4 +20,34 @@ Using pre-trained models has been found to reduce the effect of data heterogenei
 
 ## Training-Free Federated Learning using Pre-trained Models
 
-Code for all training-free FL methods will be available soon.
+`client_accumulate.py`
+
+Usage:
+`python -u client_accumulate.py --dataset "cifar100" --model squeezenet --seed 0 --dataset_path ./data --alpha 0.1 --num_clients 100`
+
+This script employs the **FedNCM strategy** to assign data to multiple clients using a Dirichlet distribution, controlled by the specified alpha and number of clients. The supported dataset are: ["inat", "cifar100", "imagenet-r", "cars", "cub"].
+
+For `inat`, the number of clients is **fixed**, so the parameters `--alpha` and `--num_clients` do not affect them.
+
+Script for generating the splits for datasets are in the folder bash_for_datasets. 
+
+The script generates two .pt files:
+
+    train_client_data.pt: A dictionary in the format {"user": {"data": tensor, "labels": tensor}, ...}
+    test_data.pt: A dictionary in the format {"data": tensor, "labels": tensor}
+
+
+`server_aggregate.py`
+
+This script processes the feature dataset created by the client script and performs aggregation on the server.
+
+Usage example:
+
+`python -u server_aggregate.py -op ./output_folder --dataset "cifar100" --model "mobilenet" --seed 0 --seed_to_load 0 --approach "fedcof" --alpha_shrink 0.1 --src_path ./federated_features --alpha 0.1 --num_clients 100`
+
+The script generate an experiment with a random name in the output folder. In this random experiments, there is a summary.csv with some necessary parameters used for running the experiments and the accuracy. Morever, there is a file server_stats.pkl with all the statistics obtained by the server. Useful for doing the plots. src_path is the path where you store the federated_features via the script client_accumulate.py. alpha, num_clients, seed_to_load serve for the purpose to load the correct dataset. seed is the seed of the current experiment. Usually is equal to seed_to_load.
+
+Script for testing the datasets are in the folder bash_for_testmethods. 
+
+A Client class and a Server class for each training-free method could be found at federate_classes.py
+
