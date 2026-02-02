@@ -28,7 +28,7 @@ To run the training-free methods (FedNCM, Fed3R and FedCOF), we provide the code
 
 This script employs the **FedNCM strategy** to assign data to multiple clients using a Dirichlet distribution, controlled by the specified alpha and number of clients. The supported dataset are: ["inat", "cifar100", "imagenet-r", "cars", "cub"].
 
-For `inat`, the number of clients is **fixed**, so the parameters `--alpha` and `--num_clients` do not affect them.
+For iNaturalist-Users-120K (inat), the number of clients is **fixed**, so the parameters `--alpha` and `--num_clients` do not affect them. For the other datasets, we use alpha 0.1 and 100 clients.
 
 Script for generating the splits for all datasets are in the folder bash_for_datasets. 
 
@@ -45,5 +45,7 @@ The script generate an experiment with a random name in the output folder. In th
 
 Script for testing all the datasets are in the folder bash_for_testmethods. 
 
-A Client class and a Server class for each training-free method could be found at federate_classes.py
+Similarly, one can run the other methods - FedNCM (needs no extra hyperparameters) and Fed3R (needs only the lambda hyperparameter).
+
+A Client class and a Server class for each training-free method could be found at `federate_classes.py`
 
