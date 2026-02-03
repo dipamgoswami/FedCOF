@@ -61,4 +61,6 @@ A Client class and a Server class for each training-free method could be found a
 
 ## Evaluation of training-free methods followed by fine-tuning or linear probing
 
+We use the codebase from [FedNCM](https://github.com/GwenLegate/GuidingLastLayerFLPretrain) and add the classifier initialization with different training-free methods. 
+
 Code for this will be uploaded soon.
