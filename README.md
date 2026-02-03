@@ -49,7 +49,7 @@ The script generates two .pt files:
 
 2. Use one of the training-free FL methods to obtain the classification performance. This script processes the feature dataset created by the client script and performs aggregation on the server.
 
-`python -u server_aggregate.py -op ./output_folder --dataset "cifar100" --model "mobilenet" --seed 0 --seed_to_load 0 --approach "fedcof" --alpha_shrink 0.1 --src_path ./federated_features --alpha 0.1 --num_clients 100`
+`python -u server_aggregate.py -op ./output_folder --dataset "cifar100" --model "mobilenet" --seed 0 --seed_to_load 0 --approach "fedcof" --gamma_shrink 0.1 --src_path ./federated_features --alpha 0.1 --num_clients 100`
 
 The script generate an experiment with a random name in the output folder. In this random experiments, there is a summary.csv with some necessary parameters used for running the experiments and the accuracy. src_path is the path where you store the federated_features via the script client_accumulate.py. The arguments - alpha, num_clients, seed_to_load are used to load the correct dataset. seed is the seed of the current experiment (usually is equal to seed_to_load).
 
