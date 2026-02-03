@@ -15,10 +15,20 @@ Using pre-trained models has been found to reduce the effect of data heterogenei
   url={https://openreview.net/forum?id=71e1UmCMQ9}
 }
 ```
+# Training-Free Federated Learning using Pre-trained Models
 
+## Datasets
 
+Download the following datasets: CIFAR100, ImageNet-R, CUB200, Stanford Cars and iNaturalist-User-120k.
 
-## Training-Free Federated Learning using Pre-trained Models
+## Environment 
+
+1. Python 3.8
+2. torch 2.1.2
+3. torchvision 0.16.2
+4. cuda 11.8
+
+## Evaluation of only training-free methods (Efficient Implementation using client feature splits)
 
 To run the training-free methods (FedNCM, Fed3R and FedCOF), we provide the code to store the client features first based on the splits and then use different methods.
 
@@ -49,3 +59,6 @@ Similarly, one can run the other methods - FedNCM (needs no extra hyperparameter
 
 A Client class and a Server class for each training-free method could be found at `federate_classes.py`
 
+## Evaluation of training-free methods followed by fine-tuning or linear probing
+
+Code for this will be uploaded soon.
