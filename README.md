@@ -63,4 +63,4 @@ A Client class and a Server class for each training-free method could be found a
 
 We use the codebase from [FedNCM](https://github.com/GwenLegate/GuidingLastLayerFLPretrain) and add the classifier initialization with different training-free methods. 
 
-Code for this will be uploaded soon.
+Code and instructions for this is available in [Init_FT_LP](https://github.com/dipamgoswami/FedCOF/tree/main/Init_FT_LP).
