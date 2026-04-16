@@ -4,6 +4,12 @@
 This repository contains the source code for FedCOF.
 Our implementation modifies the FedNCM code which uses the [FL Sim](https://github.com/facebookresearch/FLSim) source code. 
 
+### Environment
+Setup a conda environment with the specified requirements
+
+`pip install -r requirements.txt
+`
+
 ### How to Set up a Run:
 FL Sim sets up run configurations using `config.py`, additionally we have implemented the option to configure run settings
 using the command line. To see `config.py` <=> command line equivalences, see method `set_cfg_from_cl()` in `utils.py`.
