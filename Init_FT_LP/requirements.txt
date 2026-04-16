@@ -1,0 +1,17 @@
+flsim
+hydra-core>=1.1.1
+matplotlib
+omegaconf>=2.1.0
+numpy
+opacus
+pandas
+Pillow
+pytest
+scikit-learn
+setuptools
+torch==2.4
+timm
+tqdm
+tensorboard
+torchvision
+wandb
