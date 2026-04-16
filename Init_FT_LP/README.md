@@ -44,3 +44,4 @@ If you do not supply a command line argument, configuration will defer to the va
 This code base works with wandb logging, to enable it, set the appropriate command line options, or the configs in the 
 wandb section of `config.py`.
 
+Refer to the implementation details in the main paper and in the Appendix to reproduce the results from the experiments in the paper.
