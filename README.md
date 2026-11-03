@@ -20,7 +20,7 @@ Using pre-trained models has been found to reduce the effect of data heterogenei
 
 ## Datasets
 
-Download the following datasets: CIFAR100, ImageNet-R, CUB200, Stanford Cars and iNaturalist-User-120k.
+Download the following datasets: CIFAR100, ImageNet-R (taken from drive in [PILOT](https://github.com/LAMDA-CL/LAMDA-PILOT)), CUB200, Stanford Cars and iNaturalist-User-120k (taken from [federated_vision_datasets](https://github.com/google-research/google-research/blob/master/federated_vision_datasets/README.md)).
 
 ## Environment 
 
